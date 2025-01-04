@@ -1,0 +1,211 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section with Full-screen Parallax Effect */
+.hero {
+    background-image: url('https://example.com/fancy-store-background.jpg'); /* Add a vibrant background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: lightseagreen; /* Bold red for attention-grabbing title */
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 300;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+    animation-delay: 0.5s;
+}
+.about-img {
+    width: 100%; /* Makes the image responsive to the container width */
+    max-width: 300px; /* Sets a maximum width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners for a sleek look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+    margin: 20px auto; /* Centers the image and adds spacing */
+    display: block; /* Ensures it's centered in the parent container */
+}
+
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color:lightseagreen; /* Hover color that matches the header */
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #f2f2f2;
+}
+
+#services {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #f2f2f2;
+}
+
+
+/* Product Gallery */
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: lightskyblue;
+    color: white;
+    padding: 40px 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+/* Image Styling */
+.product-card img {
+    width: 100%; /* Ensures the image fills the width of the card */
+    height: auto; /* Maintains the image aspect ratio */
+    max-height: 150px; /* Limits the image height */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border-radius: 5px; /* Optional: Adds rounded corners to images */
+    margin-bottom: 15px; /* Space between the image and the text */
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Location Section with Light Blue */
+.location {
+    background-color: #E0F7FA; /* Light Blue background */
+    padding: 60px 20px;
+}
+
+.location h2 {
+    color: #00796B;
+    font-size: 2rem;
+}
+
+.location p {
+    color: #00796B;
+    font-size: 1rem;
+}
+
+.store-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.store-img {
+    width: 250px; /* Reduce image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.store-img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Map Styling */
+.map iframe {
+    border-radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
